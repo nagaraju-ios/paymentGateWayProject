@@ -14,6 +14,7 @@
 		17A015AE23EAD2EE001F2687 /* paymentGateWayProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 17A015AC23EAD2EE001F2687 /* paymentGateWayProject.xcdatamodeld */; };
 		17A015B023EAD2FE001F2687 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17A015AF23EAD2FE001F2687 /* Assets.xcassets */; };
 		17A015B323EAD2FE001F2687 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17A015B123EAD2FE001F2687 /* LaunchScreen.storyboard */; };
+		E9BE1448170FBD3045C6C40F /* Pods_paymentGateWayProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6A7B1EA5377B0C8675A2B22 /* Pods_paymentGateWayProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		17A015AF23EAD2FE001F2687 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17A015B223EAD2FE001F2687 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17A015B423EAD2FE001F2687 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35B6809C81C0FECA2334D5AD /* Pods-paymentGateWayProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-paymentGateWayProject.debug.xcconfig"; path = "Target Support Files/Pods-paymentGateWayProject/Pods-paymentGateWayProject.debug.xcconfig"; sourceTree = "<group>"; };
+		C036CB8E9E4C550721E0FD1E /* Pods-paymentGateWayProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-paymentGateWayProject.release.xcconfig"; path = "Target Support Files/Pods-paymentGateWayProject/Pods-paymentGateWayProject.release.xcconfig"; sourceTree = "<group>"; };
+		C6A7B1EA5377B0C8675A2B22 /* Pods_paymentGateWayProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_paymentGateWayProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9BE1448170FBD3045C6C40F /* Pods_paymentGateWayProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				17A015A223EAD2EE001F2687 /* paymentGateWayProject */,
 				17A015A123EAD2EE001F2687 /* Products */,
+				229CE66E254757CE925C02AD /* Pods */,
+				540571C4D205EBF9B77A7BEF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +77,24 @@
 			path = paymentGateWayProject;
 			sourceTree = "<group>";
 		};
+		229CE66E254757CE925C02AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				35B6809C81C0FECA2334D5AD /* Pods-paymentGateWayProject.debug.xcconfig */,
+				C036CB8E9E4C550721E0FD1E /* Pods-paymentGateWayProject.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		540571C4D205EBF9B77A7BEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6A7B1EA5377B0C8675A2B22 /* Pods_paymentGateWayProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 17A015B723EAD2FE001F2687 /* Build configuration list for PBXNativeTarget "paymentGateWayProject" */;
 			buildPhases = (
+				ECAC8CDF1FC7E07174EAAC70 /* [CP] Check Pods Manifest.lock */,
 				17A0159C23EAD2EE001F2687 /* Sources */,
 				17A0159D23EAD2EE001F2687 /* Frameworks */,
 				17A0159E23EAD2EE001F2687 /* Resources */,
+				AC9E4E4E9C654FAA2242788A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +162,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AC9E4E4E9C654FAA2242788A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-paymentGateWayProject/Pods-paymentGateWayProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-paymentGateWayProject/Pods-paymentGateWayProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-paymentGateWayProject/Pods-paymentGateWayProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECAC8CDF1FC7E07174EAAC70 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-paymentGateWayProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		17A0159C23EAD2EE001F2687 /* Sources */ = {
@@ -286,6 +355,7 @@
 		};
 		17A015B823EAD2FE001F2687 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35B6809C81C0FECA2334D5AD /* Pods-paymentGateWayProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -303,6 +373,7 @@
 		};
 		17A015B923EAD2FE001F2687 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C036CB8E9E4C550721E0FD1E /* Pods-paymentGateWayProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
